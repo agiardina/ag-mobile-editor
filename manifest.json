@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "AGMobileEditor",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "ag-mobile-editor@andreagiardina.com"
+    }
+  },
+
+  "description": "Transform OU forum editor in a fullscreen editor with LaTex preview. ",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.open.ac.uk/*"],
+      "js": ["textarea.js", "TeXZilla-min.js"]
+    }
+  ]
+}
